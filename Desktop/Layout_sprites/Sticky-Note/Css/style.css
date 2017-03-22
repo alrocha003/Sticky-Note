@@ -1,0 +1,101 @@
+body{
+		font-family: 'Gloria Hallelujah', cursive;
+		background-color: #6c6c6c;
+	}
+
+	header{
+		background-color: #f8f944;
+		color: #000;
+		height: 80px;
+		font-size: 1.5em;
+	}
+
+	header .glyphicon-plus-sign
+	{
+		float: right;
+	}
+
+	header .glyphicon-plus-sign:hover
+	{
+		animation: gira 0.5s linear 1;
+	}
+
+	@keyframes gira{
+		from{transform: rotate(0deg);}	
+			to{transform: rotate(90deg);}	
+	}
+
+	#exampleModal{
+
+		font-family: Arial;
+		font-size: 1.4em;
+	}
+
+	#message-text{
+		height: 250px;
+	}
+
+	.div-note{
+/*		background-color: #E9967A;
+*/		
+		color: #fff;
+		border: solid #E9967A 0.1em;
+		border-radius: 0.5em;
+		font-family: Arial;
+		font-size: 1.5em;
+		height: auto;
+		padding: 1em;
+		margin: 1.4em;
+	}
+
+	footer p{
+		position: absolute;
+		bottom: 1px;
+		margin-left: 40%;
+		font-size: 0.9em;
+		color: #fff;
+		
+	}
+
+	footer p a :active{
+		text-decoration: none;
+		color: #fff;
+	}
+
+	footer p a{
+		text-decoration: none;
+		color: #fff;
+	}
+
+	footer p a:hover{
+		color: #fff;
+	}
+
+	.barra{
+		background-color: #000;
+		color: #fff;
+		font-family: 'VT323', monospace;
+		font-size: 1.2em;
+	}
+
+	.barra p{
+		padding-top: 0.5em;
+	}
+
+	.img-engrenagem{
+
+		float: right;
+		/*background-image: url(img/gear-black-shape_icon-icons.com_56963.svg); */
+		width: 25px;
+		height: 25px;
+		
+	}
+
+	.img-engrenagem:hover{
+	    animation:roda-engrenagem 4s linear infinite;
+	}
+
+	@keyframes roda-engrenagem {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
