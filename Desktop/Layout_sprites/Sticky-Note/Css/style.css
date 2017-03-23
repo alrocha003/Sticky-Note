@@ -3,11 +3,17 @@ body{
 		background-color: #6c6c6c;
 	}
 
-	header{
+	header
+	{
 		background-color: #f8f944;
 		color: #000;
 		height: 80px;
 		font-size: 1.5em;
+	}
+
+	.p-header-margin
+	{
+		margin-left: 1em;
 	}
 
 	header .glyphicon-plus-sign
@@ -62,6 +68,7 @@ body{
 		height: auto;
 		padding: 1em;
 		margin: 1.4em;
+		word-wrap: break-word;
 	}
 
 	footer p{
@@ -96,6 +103,7 @@ body{
 
 	.barra p{
 		padding-top: 0.5em;
+		margin-left: 1em;
 	}
 
 	.img-engrenagem{
