@@ -13,6 +13,7 @@ body{
 	header .glyphicon-plus-sign
 	{
 		float: right;
+		margin-right: 2%;
 	}
 
 	header .glyphicon-plus-sign:hover
@@ -29,6 +30,21 @@ body{
 
 		font-family: Arial;
 		font-size: 1.4em;
+	}
+
+	#editModal
+	{
+		font-family: Arial;
+		font-size: 1.4em;
+	}
+
+	.modal-header{
+	    background-color: rgb(46, 139, 87);
+	    color: #fff;
+	}
+
+	#message-text-edit{
+		height: 250px;
 	}
 
 	#message-text{
@@ -98,4 +114,5 @@ body{
 	@keyframes roda-engrenagem {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+
 }
