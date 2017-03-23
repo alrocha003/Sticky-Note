@@ -4,6 +4,8 @@ function loadPage()
 {
 	btnInserir = document.getElementById("btnInserir");
 	btnInserir.addEventListener("click", inserirNota, false);
+
+
 }
 
  function inserirNota()
@@ -145,7 +147,7 @@ function criaElemento(assuntoText, messageText)
  		svg.setAttribute("height", "50px");
  		svg.setAttribute("class", "img-engrenagem btn-alter");
  		
- 		// svg.setAttribute("onclick", "alterNota");
+ 		svg.setAttribute("onclick", "alterNota");
  		
  		svg.setAttribute("data-toggle", "modal");
  		svg.setAttribute("data-target", "#editModal");
@@ -169,13 +171,21 @@ function criaElemento(assuntoText, messageText)
 
 
 
-function alterNota()
+function alterNota(e)
 {
-	var nota = document.querySelector(".div-note");
-	var div = document.getElementById(nota.id);
+	var local = e.target.parentNode;
 
-	var input = document.getElementById("message-text-edit");
-	input.innerText = div.textContent;	
+	// var div = document.getElementById(local.parentNode.id);
+	
+
+	var assunto = document.getElementById("assunto-text-edit");
+	var asNota = document.querySelector(local.parentNode.id + "assuntoId");
+	assunto.value = asNota.textContent; 
+
+	var text = document.getElementById("message-text-edit");
+	var textModal = document.querySelector(local.parentNode.id + "textId");
+	text.innerText = textModal.textContent;
+	
 
 	var btnAlterar = document.getElementById("btnAlterar");
 	btnAlterar.addEventListener("click", salvarAlteracao(div), false);
@@ -183,9 +193,9 @@ function alterNota()
 
 function salvarAlteracao(div)
 {
-	var input = document.getElementById("message-text-edit");
+	// var input = document.getElementById("message-text-edit");
 
-	div.innerText = input.textContent;
+	// div.innerText = input.textContent;
 }
 
 
