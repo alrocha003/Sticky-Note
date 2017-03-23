@@ -11,25 +11,21 @@
 
     <preference name="SplashScreenDelay" value="10000" />
 
-    <gap:platform name="android">
-              <icon src="res/icons/android/icon-36-ldpi.png" density="ldpi" />
-              <icon src="res/icons/android/icon-48-mdpi.png" density="mdpi" />
-              <icon src="res/icons/android/icon-72-hdpi.png" density="hdpi" />
-              <icon src="res/icons/android/icon-96-xhdpi.png" density="xhdpi" />
-     </gap:platform>
+              <icon src="res/icons/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+              <icon src="res/icons/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+              <icon src="res/icons/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+              <icon src="res/icons/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
     
   <description>
       Sticky Note - Notas rapidas para o seu dia a dia.
   </description>
 
-    <gap:platform name="android">
         <!-- you can use any density that exists in the Android project -->
-        <gap:splash src="res/screens/android/screen-hdpi-portrait.png" density="land-hdpi"/>
-        <gap:splash src="res/screens/android/screen-ldpi-portrait.png" density="land-ldpi"/>
-        <gap:splash src="res/screens/android/screen-mdpi-portrait.png" density="land-mdpi"/>
-        <gap:splash src="res/screens/android/screen-xhdpi-portrait.png" density="land-xhdpi"/>
-        <gap:splash src="res/screens/android/screen-xxhdpi-portrait.png" density="port-xxhdpi"/>
-        <gap:splash src="res/screens/android/screen-xxxhdpi-portrait.png" density="port-xxxhdpi"/>
-    </gap:platform>
+        <gap:splash src="res/screens/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="land-hdpi"/>
+        <gap:splash src="res/screens/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="land-ldpi"/>
+        <gap:splash src="res/screens/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="land-mdpi"/>
+        <gap:splash src="res/screens/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="land-xhdpi"/>
+        <gap:splash src="res/screens/android/screen-xxhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xxhdpi"/>
+        <gap:splash src="res/screens/android/screen-xxxhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xxxhdpi"/>
 
 </widget>
