@@ -8,26 +8,28 @@
 <!-- versionCode is optional and Android only -->
 
   <name>Sticky Note</name>
-  
-    <platform name="android">
+
+    <preference name="SplashScreenDelay" value="10000" />
+
+    <gap:platform name="android">
               <icon src="res/icons/android/icon-36-ldpi.png" density="ldpi" />
               <icon src="res/icons/android/icon-48-mdpi.png" density="mdpi" />
               <icon src="res/icons/android/icon-72-hdpi.png" density="hdpi" />
               <icon src="res/icons/android/icon-96-xhdpi.png" density="xhdpi" />
-     </platform>
+     </gap:platform>
     
   <description>
       Sticky Note - Notas rapidas para o seu dia a dia.
   </description>
 
-    <platform name="android">
-    <!-- you can use any density that exists in the Android project -->
-    <splash src="res/screens/android/screen-hdpi-portrait.png" density="land-hdpi"/>
-    <splash src="res/screens/android/screen-ldpi-portrait.png" density="land-ldpi"/>
-    <splash src="res/screens/android/screen-mdpi-portrait.png" density="land-mdpi"/>
-    <splash src="res/screens/android/screen-xhdpi-portrait.png" density="land-xhdpi"/>
-    <splash src="res/screens/android/screen-xxhdpi-portrait.png" density="port-xxhdpi"/>
-    <splash src="res/screens/android/screen-xxxhdpi-portrait.png" density="port-xxxhdpi"/>
-</platform>
+    <gap:platform name="android">
+        <!-- you can use any density that exists in the Android project -->
+        <gap:splash src="res/screens/android/screen-hdpi-portrait.png" density="land-hdpi"/>
+        <gap:splash src="res/screens/android/screen-ldpi-portrait.png" density="land-ldpi"/>
+        <gap:splash src="res/screens/android/screen-mdpi-portrait.png" density="land-mdpi"/>
+        <gap:splash src="res/screens/android/screen-xhdpi-portrait.png" density="land-xhdpi"/>
+        <gap:splash src="res/screens/android/screen-xxhdpi-portrait.png" density="port-xxhdpi"/>
+        <gap:splash src="res/screens/android/screen-xxxhdpi-portrait.png" density="port-xxxhdpi"/>
+    </gap:platform>
 
 </widget>
