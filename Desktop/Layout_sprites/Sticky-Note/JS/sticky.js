@@ -179,16 +179,16 @@ function alterNota(e)
 	
 
 	var assunto = document.getElementById("assunto-text-edit");
-	var asNota = document.querySelector(local.parentNode.id + "assuntoId");
+	var asNota = document.querySelector("#"+local.parentNode.id + " #assuntoId");
 	assunto.value = asNota.textContent; 
 
 	var text = document.getElementById("message-text-edit");
-	var textModal = document.querySelector(local.parentNode.id + "textId");
+	var textModal = document.querySelector("#"+local.parentNode.id + " #textId");
 	text.innerText = textModal.textContent;
 	
 
-	var btnAlterar = document.getElementById("btnAlterar");
-	btnAlterar.addEventListener("click", salvarAlteracao(div), false);
+	// var btnAlterar = document.getElementById("btnAlterar");
+	// btnAlterar.addEventListener("click", salvarAlteracao(div), false);
 }
 
 function salvarAlteracao(div)
