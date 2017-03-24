@@ -20,13 +20,14 @@
       Sticky Note - Notas rapidas para o seu dia a dia.
   </description>
 
+    <splash src="res/screens/android/screen-hdpi-portrait.png"/>
         <!-- you can use any density that exists in the Android project -->
-        <splash src="res/screens/android/screen-hdpi-portrait.png" platform="android" qualifier="land-hdpi"/>
+<!--         <splash src="res/screens/android/screen-hdpi-portrait.png" platform="android" qualifier="land-hdpi"/>
         <splash src="res/screens/android/screen-ldpi-portrait.png" platform="android" qualifier="land-ldpi"/>
         <splash src="res/screens/android/screen-mdpi-portrait.png" platform="android" qualifier="land-mdpi"/>
         <splash src="res/screens/android/screen-xhdpi-portrait.png" platform="android" qualifier="land-xhdpi"/>
         <splash src="res/screens/android/screen-xxhdpi-portrait.png" platform="android" qualifier="port-xxhdpi"/>
-        <splash src="res/screens/android/screen-xxxhdpi-portrait.png" platform="android" qualifier="port-xxxhdpi"/>
+        <splash src="res/screens/android/screen-xxxhdpi-portrait.png" platform="android" qualifier="port-xxxhdpi"/> -->
         
         <preference name="SplashScreen" value="screen"/>
         
